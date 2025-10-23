@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Inicio de Sesión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            width: 300px;
+        }
+        h2 { text-align: center; color: #16a085; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        input[type="submit"] {
+            background-color: #16a085;
+            color: white;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background-color: #138d75;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #16a085;
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+
+<body>
+<form action="comprueba.php" method="post">
+
+<h2>INICIAR SESION</h2>
+<label for="usuario">Usuario</label>
+<input type="text" name="usuario" id="usuario">
+<label for="clave">Clave</label>
+<input type="password" name="clave" id="clave">
+<input type="submit" value="Entrar">
+<a href="registro.php"><input type="button" value="Registrarse"></a>
+</form>
+
+
+
+</body>
+
+
+</html>
